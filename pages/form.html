@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--Using Google fonts "Raleway"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    
+    <!--CSS Boostrap y página"-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/form.css" >
+    
+    <!--Using FontAwesome-->
+    <script src="https://kit.fontawesome.com/d65efb3d43.js" crossorigin="anonymous"></script>
+
+    <!--favIcon-->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <!--Validaciones-->
+    <script src="../js/app.js"></script>
+
+<title> 🆆4🅶 | Registro nuevo usuario </title>
+</head>
+<body>
+  <div id="navisoc">
+  <!--Social container-->
+  <div class="socialcall">
+  <a href="https://twitter.com/diegow4g" target="blanc_"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/diegow4g/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/channel/UC6TbIRoVCKhhCkj2ORkgAFA"><i class="fab fa-youtube"></i></a>
+  <a href="https://goo.gl/maps/DiH2xdEDzDsxTVqWA"><i class="fas fa-map-marked-alt"></i></a>
+  <span class="phone">   Call 0800-999-4335 (GEEK) </span>
+  </div>
+</div>
+ 
+
+ 
+<div id="navi">
+  <ul>
+  <li><a href="../index.html"><i class="fa fa-home"></i></a></li>
+  <li><a href="#"><i class="fas fa-file-contract"></i></a></li>
+  <li><a href="#"><i class="fas fa-handshake"></i></a></li>
+  <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+  <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+  </ul>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="row justify-content-md-center">
+      <div class="col-md-2"></div>  
+      <div class="col-md-8"><div class="alert alert-light" role="alert">
+      Registro de usuario w4g
+      </div>
+      </div>
+      <div class="col-md-2"></div>
+  </div>
+  
+</div>
+
+<div class="container">
+<div class="row justify-content-md-center">
+    <div class="col-md-2"></div>  
+    <div class="col-md-8"><div class="alert alert-danger" role="alert"> NOTA: Se valida a partir de enlace en correo electrónico de solicitud con reserva de usuario y contraseña. 
+    </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<div class="container">
+    <form class="row justify-content-md-center" id="RegFrom" name="RegForm" onsubmit="return ValidationForm()" method="post" target="_blanc">
+      
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <label for="vDf01" class="form-label">Correo electrónico <a data-bs-container="body" data-bs-toggle="popover" title="Correo electrónico" data-bs-content="Escriba una dirección de correo electrónico a la que tenga acceso para recibir notificaciones y alertas importantes sobre el servicio relacionadas con su cuenta."><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+        <input type="email" class="form-control" id="vDf01" name="vDf01" maxlength="12" required>
+      </div>
+      <div class="col-md-2"></div>
+      
+      <div class="col-md-2"></div>
+      <div class="col-md-4"> 
+      <label for="vDf02" class="form-label">Código 8 dígitos. </label>
+      <input type="text" class="form-control" id="vDf02" name="vDf02" maxlength="8" required>
+      </div>
+      <div class="col-md-4">
+      <label for="vDf03" class="form-label">Usuario (6 a 8 caracteres) </label>
+      <input type="text" class="form-control" id="vDf03"   minlength="6" maxlength="12"required>
+      </div>
+      <div class="col-md-2"></div>
+
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+      <label for="vDf04" class="form-label">Contraseña (6 a 12 caracteres)</label>
+      <input type="password" class="form-control" id="vDf04" name="vDf04"  minlength="6" maxlength="12" required>
+      </div>
+      <div class="col-md-4">
+      <label for="vDf05" class="form-label">Confirma tu contraseña </label>
+      <input type="password" class="form-control" id="vDf05" name="vDf05"  minlength="6" maxlength="12" required>
+      </div>
+      <div class="col-md-2"></div>
+
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <label for="vDf06" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="vDf06" name="vDf06" required>
+        </div>
+      <div class="col-md-4">
+        <label for="vDf07" class="form-label">Segundo nombre (Opcional)</label>
+        <input type="text" class="form-control" id="vDf07" required>
+        </div>
+        <div class="col-md-2"></div>
+
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+        <label for="vDf08" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="vDf08" name="vDf08" required>
+        </div>
+        <div class="col-md-4">
+          <label for="vDf09" class="form-label">Segundo apellido (Opcional)</label>
+          <input type="text" class="form-control" id="vDf09" name="vDf09">
+        </div>
+      <div class="col-md-2"></div>
+    
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <label for="vDf10" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="vDf10" name="vDf10" required>
+        
+      </div>
+      <div class="col-md-4">
+          <label for="vDf11" class="form-label">Teléfono <a  data-bs-container="body" data-bs-toggle="popover" title="Teléfono" data-bs-content="Utilizaremos este número de teléfono en caso de que tengamos que ponernos en contacto con usted para ofrecerle un servicio o soporte técnico."><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+          <input type="tel" class="form-control" id="vDf11" name="vDf11" required>
+        
+      </div>
+      <div class="col-md-2"></div>
+
+    
+    
+    
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    <label for="vDf12" class="form-label">Nombre del titular de la tarjeta</label>
+    <input type="text" class="form-control" id="vDf12" name="vDf12" required>
+    </div>
+    <div class="col-md-2"></div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+    <label for="vDf14" class="form-label">Número de tarjeta <a data-bs-container="body" data-bs-toggle="popover" title="Medios de pago" data-bs-content="Proporcione una tarjeta de crédito. Realizaremos una autorización temporal en esta tarjeta, pero no se le cobrará a menos que cambie a los precios de pago por uso. No aceptamos tarjetas de prepago."><i class="fa fa-info-circle" aria-hidden="true"></i></a></label>
+    <input type="text" class="form-control" id="vDf14" name="vDf14" required>
+    </div>
+    <div class="col-md-2">
+        <label for="vDf15" class="form-label">MM</label>
+        <select class="form-select" id="vDf15" name="vDf15" required>
+            <option selected></option>
+            <option value="1">01 - ENERO</option>
+            <option value="2">02 - FEBRERO</option>
+            <option value="3">03 - MARZO</option>
+            <option value="4">04 - ABRIL</option>
+            <option value="5">05 - MAYO</option>
+            <option value="6">06 - JUNIO</option>
+            <option value="7">07 - JULIO</option>
+            <option value="8">08 - AGOSTO</option>
+            <option value="9">09 - SEPTIEMBRE</option>
+            <option value="10">10 - OCTUBRE</option>
+            <option value="11">11 - NOVIEMBRE</option>
+            <option value="12">12 - DICIEMBRE</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label for="vDf16" class="form-label">YYY</label>
+        <select class="form-select" id="vDf16" name="vDf16" required>
+            <option selected></option>
+            <option value="1">21</option>
+            <option value="2">22</option>
+            <option value="3">23</option>
+            <option value="4">24</option>
+            <option value="5">25</option>
+            <option value="6">25</option>
+            <option value="7">27</option>
+            <option value="8">28</option>
+            <option value="9">29</option>
+            <option value="10">30</option>
+        </select>
+    </div>
+
+    <div class="col-md-1">
+      <label for="vDf017" class="form-label">CCV</label>
+      <input type="text" class="form-control" id="vDf17" name="vDf17" required>
+      </div>
+      <div class="col-md-2"></div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <label for="vDf18" class="form-label">Dirección (línea 1)</label>
+      <input type="text" class="form-control" id="vDf18"name="vDf18" required>
+    </div>
+    <div class="col-md-2"></div>
+    
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <label for="vDf19" class="form-label">Dirección (línea 2) - Opcional</label>
+      <input type="text" class="form-control" id="vDf19" name="vDf19">
+    </div>
+    <div class="col-md-2"></div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+      <label for="vDf20" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="vDf20" name="vDf20" required>
+    </div>
+
+    <div class="col-md-2">
+      <label for="vDf21" class="form-label">Estado/provincia</label>
+      <input type="text" class="form-control" id="vDf21" name="vDf21" required>
+    </div>
+
+    <div class="col-md-1">
+      <label for="vDf22" class="form-label">ZIP</label>
+      <input type="text" class="form-control" id="vDf22" name="vDf22" required>
+    </div>
+
+    <div class="col-md-2">
+      <label for="vDf23" class="form-label">País o región <a data-bs-container="body" data-bs-toggle="popover" title="Ubicación" data-bs-content="Elija la ubicación que coincida con su dirección de facturación. No podrá cambiar la selección posteriormente. Si su país no aparece en la lista, la oferta no está disponible en su región."></a></label>
+      <select class="form-select" id="vDf23" name="vDf23" required>
+      <option selected></option>
+      <option value="1">AF - AFGHANISTAN</option>
+      <option value="2">AX - ÅLAND ISLANDS</option>
+      <option value="3">AL - ALBANIA</option>
+      <option value="4">DZ - ALGERIA</option>
+      <option value="5">AS - AMERICAN SAMOA</option>
+      <option value="6">AD - ANDORRA</option>
+      <option value="7">AO - ANGOLA</option>
+      <option value="8">AI - ANGUILLA</option>
+      <option value="9">AQ - ANTARCTICA</option>
+      <option value="10">AG - ANTIGUA AND</option>
+      <option value="11"> - BARBUDA</option>
+      <!--<option value="12">AR - ARGENTINA</option> Travesura por obligarnos a usar Boostrap-->
+      <option value="13">AM - ARMENIA</option>
+      <option value="14">AW - ARUBA</option>
+      <option value="15">AU - AUSTRALIA</option>
+      <option value="16">AT - AUSTRIA</option>
+      <option value="17">AZ - AZERBAIJAN</option>
+      <option value="18">BS - BAHAMAS</option>
+      <option value="19">BH - BAHRAIN</option>
+      <option value="20">BD - BANGLADESH</option>
+      <option value="21">BB - BARBADOS</option>
+      <option value="22">BY - BELARUS</option>
+      <option value="23">BE - BELGIUM</option>
+      <option value="24">BZ - BELIZE</option>
+      <option value="25">BJ - BENIN</option>
+      <option value="26">BM - BERMUDA</option>
+      <option value="27">BT - BHUTAN</option>
+      <option value="28">BO - BOLIVIA,</option>
+      <option value="29"> - PLURINATIONAL STATE</option>
+      <option value="30"> - OF</option>
+      <option value="31">BA - BOSNIA AND HERZEGOVINA</option>
+      <option value="32">BW - BOTSWANA</option>
+      <option value="33">BV - BOUVET ISLAND</option>
+      <option value="34">BR - BRAZIL</option>
+      <option value="35">IO - BRITISH INDIAN OCEAN TERRITORYN</option>
+      <option value="36">BN - BRUNEI DARUSSALAM</option>
+      <option value="37">BG - BULGARIA</option>
+      <option value="38">BF - BURKINA FASO</option>
+      <option value="39">BI - BURUNDI</option>
+      <option value="40">KH - CAMBODIA</option>
+      <option value="41">CM - CAMEROON</option>
+      <option value="42">CA - CANADA</option>
+      <option value="43">CV - CAPE VERDE</option>
+      <option value="44">KY - CAYMAN ISLANDS</option>
+      <option value="45">CF - CENTRAL AFRICAN REPUBLIC</option>
+      <option value="46">TD - CHAD</option>
+      <option value="47">CL - CHILE</option>
+      <option value="48">CN - CHINA</option>
+      <option value="49">CX - CHRISTMAS ISLAND</option>
+      <option value="50">CC - COCOS (KEELING) ISLANDS</option>
+      <option value="51">CO - COLOMBIA</option>
+      <option value="52">KM - COMOROS</option>
+      <option value="53">CG - CONGO</option>
+      <option value="54">CD - CONGO, THE DEMOCRATIC</option>
+      <option value="55"> - REPUBLIC OF THE</option>
+      <option value="56">CK - COOK ISLANDS</option>
+      <option value="57">CR - COSTA RICA</option>
+      <option value="58">CI - CÔTE DIVOIRE</option>
+      <option value="59">HR - CROATIA</option>
+      <option value="60">CU - CUBA</option>
+      <option value="61">CY - CYPRUS</option>
+      <option value="62">CZ - CZECH REPUBLIC</option>
+      <option value="63">DK - DENMARK</option>
+      <option value="64">DJ - DJIBOUTI</option>
+      <option value="65">DM - DOMINICA</option>
+      <option value="66">DO - DOMINICAN REPUBLIC</option>
+      <option value="67">EC - ECUADOR</option>
+      <option value="68">EG - EGYPT</option>
+      <option value="69">SV - EL SALVADOR</option>
+      <option value="70">GQ - EQUATORIAL GUINEA</option>
+      <option value="71">ER - ERITREA</option>
+      <option value="72">EE - ESTONIA</option>
+      <option value="73">ET - ETHIOPIA</option>
+      <option value="74">FK - FALKLAND ISLANDS (MALVINAS)</option>
+      <option value="75">FO - FAROE ISLANDS</option>
+      <option value="76">FJ - FIJI</option>
+      <option value="77">FI - FINLAND</option>
+      <option value="78">FR - FRANCE</option>
+      <option value="79">GF - FRENCH GUIANA</option>
+      <option value="80">PF - FRENCH POLYNESIA</option>
+      <option value="81">TF - FRENCH SOUTHERN TERRITORIES</option>
+      <option value="82">GA - GABON</option>
+      <option value="83">GM - GAMBIA</option>
+      <option value="84">GE - GEORGIA</option>
+      <option value="85">DE - GERMANY</option>
+      <option value="86">GH - GHANA</option>
+      <option value="87">GI - GIBRALTAR</option>
+      <option value="88">GR - GREECE</option>
+      <option value="89">GL - GREENLAND</option>
+      <option value="90">GD - GRENADA</option>
+      <option value="91">GP - GUADELOUPE</option>
+      <option value="92">GU - GUAM</option>
+      <option value="93">GT - GUATEMALA</option>
+      <option value="94">GG - GUERNSEY</option>
+      <option value="95">GN - GUINEA</option>
+      <option value="96">GW - GUINEA-BISSAU</option>
+      <option value="97">GY - GUYANA</option>
+      <option value="98">HT - HAITI</option>
+      <option value="99">HM - HEARD ISLAND AND MCDONALD ISLANDS</option>
+      <option value="100">VA - HOLY SEE (VATICAN CITY STATE)</option>
+      <option value="101">HN - HONDURAS</option>
+      <option value="102">HK - HONG KONG</option>
+      <option value="103">HU - HUNGARY</option>
+      <option value="104">IS - ICELAND</option>
+      <option value="105">IN - INDIA</option>
+      <option value="106">ID - INDONESIA</option>
+      <option value="107">IR - IRAN, ISLAMIC REPUBLIC OF</option>
+      <option value="108">IQ - IRAQ</option>
+      <option value="109">IE - IRELAND</option>
+      <option value="110">IM - ISLE OF MAN</option>
+      <option value="111">IL - ISRAEL</option>
+      <option value="112">IT - ITALY</option>
+      <option value="113">JM - JAMAICA</option>
+      <option value="114">JP - JAPAN</option>
+      <option value="115">JE - JERSEY</option>
+      <option value="116">JO - JORDAN</option>
+      <option value="117">KZ - KAZAKHSTAN</option>
+      <option value="118">KE - KENYA</option>
+      <option value="119">KI - KIRIBATI</option>
+      <option value="120">KP - KOREA, DEMOCRATIC PEOPLE’S REPUBLIC OF</option>
+      <option value="121">KR - KOREA, REPUBLIC OF</option>
+      <option value="122">KW - KUWAIT</option>
+      <option value="123">KG - KYRGYZSTAN</option>
+      <option value="124">LA - LAO PEOPLE’S DEMOCRATIC REPUBLIC</option>
+      <option value="125">LV - LATVIA</option>
+      <option value="126">LB - LEBANON</option>
+      <option value="127">LS - LESOTHO</option>
+      <option value="128">LR - LIBERIA</option>
+      <option value="129">LY - LIBYAN ARAB JAMAHIRIYA</option>
+      <option value="130">LI - LIECHTENSTEIN</option>
+      <option value="131">LT - LITHUANIA</option>
+      <option value="132">LU - LUXEMBOURG</option>
+      <option value="133">MO - MACAO</option>
+      <option value="134">MK - MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+      <option value="135">MG - MADAGASCAR</option>
+      <option value="136">MW - MALAWI</option>
+      <option value="137">MY - MALAYSIA</option>
+      <option value="138">MV - MALDIVES</option>
+      <option value="139">ML - MALI</option>
+      <option value="140">MT - MALTA</option>
+      <option value="141">MH - MARSHALL ISLANDS</option>
+      <option value="142">MQ - MARTINIQUE</option>
+      <option value="143">MR - MAURITANIA</option>
+      <option value="144">MU - MAURITIUS</option>
+      <option value="145">YT - MAYOTTE</option>
+      <option value="146">MX - MEXICO</option>
+      <option value="147">FM - MICRONESIA, FEDERATED STATES OF</option>
+      <option value="148">MD - MOLDOVA, REPUBLIC OF</option>
+      <option value="149">MC - MONACO</option>
+      <option value="150">MN - MONGOLIA</option>
+      <option value="151">ME - MONTENEGRO</option>
+      <option value="152">MS - MONTSERRAT</option>
+      <option value="153">MA - MOROCCO</option>
+      <option value="154">MZ - MOZAMBIQUE</option>
+      <option value="155">MM - MYANMAR</option>
+      <option value="156">NA - NAMIBIA</option>
+      <option value="157">NR - NAURU</option>
+      <option value="158">NP - NEPAL</option>
+      <option value="159">NL - NETHERLANDS</option>
+      <option value="160">AN - NETHERLANDS ANTILLES</option>
+      <option value="161">NC - NEW CALEDONIA</option>
+      <option value="162">NZ - NEW ZEALAND</option>
+      <option value="163">NI - NICARAGUA</option>
+      <option value="164">NE - NIGER</option>
+      <option value="165">NG - NIGERIA</option>
+      <option value="166">NU - NIUE</option>
+      <option value="167">NF - NORFOLK ISLAND</option>
+      <option value="168">MP - NORTHERN MARIANA ISLANDS</option>
+      <option value="169">NO - NORWAY</option>
+      <option value="170">OM - OMAN</option>
+      <option value="171">PK - PAKISTAN</option>
+      <option value="172">PW - PALAU</option>
+      <option value="173">PS - PALESTINIAN TERRITORY, OCCUPIED</option>
+      <option value="174">PA - PANAMA</option>
+      <option value="175">PG - PAPUA NEW GUINEA</option>
+      <option value="176">PY - PARAGUAY</option>
+      <option value="177">PE - PERU</option>
+      <option value="178">PH - PHILIPPINES</option>
+      <option value="179">PN - PITCAIRN</option>
+      <option value="180">PL - POLAND</option>
+      <option value="181">PT - PORTUGAL</option>
+      <option value="182">PR - PUERTO RICO</option>
+      <option value="183">QA - QATAR</option>
+      <option value="184">RE - RÉUNION</option>
+      <option value="185">RO - ROMANIA</option>
+      <option value="186">RU - RUSSIAN FEDERATION</option>
+      <option value="187">RW - RWANDA</option>
+      <option value="188">BL - SAINT BARTHÉLEMY</option>
+      <option value="189">SH - SAINT HELENA ASCENSION AND TRISTAN DA CUNHA</option>
+      <option value="190">KN - TTS AND NEVIS</option>
+      <option value="191">LC - SAINT LUCIA</option>
+      <option value="192">MF - SAINT MARTIN</option>
+      <option value="193">PM - SAINT PIERRE AND MIQUELON</option>
+      <option value="194">VC - SAINT VINCENT AND GRENADINES</option>
+      <option value="195">WS - SAMOA</option>
+      <option value="196">SM - SAN MARINO</option>
+      <option value="197">ST - SAO TOME AND PRINCIPE</option>
+      <option value="198">SA - SAUDI ARABIA</option>
+      <option value="199">SN - SENEGAL</option>
+      <option value="200">RS - SERBIA</option>
+      <option value="201">SC - SEYCHELLES</option>
+      <option value="202">SL - SIERRE LEONE</option>
+      <option value="203">SG - SINGAPORE</option>
+      <option value="204">SK - SLOVAKIA</option>
+      <option value="205">SI - SLOVENIA</option>
+      <option value="206">SB - SOLOMON ISLANDS</option>
+      <option value="207">SO - SOMALIA</option>
+      <option value="208">ZA - SOUTH AFRICA</option>
+      <option value="209">GS - SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+      <option value="210">ES - SPAIN</option>
+      <option value="211">LK - SRI LANKA</option>
+      <option value="212">SD - SUDAN</option>
+      <option value="213">SR - SURINAME</option>
+      <option value="214">SJ - SVALBARD AND JAN MAYEN</option>
+      <option value="215">SZ - SWAZILAND</option>
+      <option value="216">SE - SWEDEN</option>
+      <option value="217">CH - SWITZERLAND</option>
+      <option value="218">SY - SYRIAN ARAB REPUBLIC</option>
+      <option value="219">TW - TAIWAN, PROVINCE OF CHINA</option>
+      <option value="220">TJ - TAJIKISTAN</option>
+      <option value="221">TZ - TANZANIA, UNITED REPUBLIC OF</option>
+      <option value="222">TH - THAILAND</option>
+      <option value="223">TL - TIMOR-LESTE</option>
+      <option value="224">TG - TOGO</option>
+      <option value="225">TK - TOKELAU</option>
+      <option value="226">TO - TONGA</option>
+      <option value="227">TT - TRINIDAD AND TOBAGO</option>
+      <option value="228">TN - TUNISIA</option>
+      <option value="229">TR - TURKEY</option>
+      <option value="230">TM - TURKMENISTAN</option>
+      <option value="231">TC - TURKS AND CAICOS ISLANDS</option>
+      <option value="232">TV - TUVALU</option>
+      <option value="233">UG - UGANDA</option>
+      <option value="234">UA - UKRANIE</option>
+      <option value="235">AE - UNITED ARAB EMIRATES</option>
+      <option value="236">GB - UNITED KINGDOM</option>
+      <option value="237">US - UNITES STATES</option>
+      <option value="238">UM - UNITED STATES MINOR OUTLYING ISLANDS</option>
+      <option value="239">UY - URUGUAY</option>
+      <option value="240">UZ - UZBEKISTAN</option>
+      <option value="241">VU - VANUATU</option>
+      <option value="242">VE - VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+      <option value="243">VN - VEIT NAM</option>
+      <option value="244">VG - VIRGIN ISLANDS, BRITISH</option>
+      <option value="245">VI - VIRGIN ISLANDS, U.S.</option>
+      <option value="246">WF - WALLIS AND FUTURA</option>
+      <option value="247">EH - WESTERN SAHARA</option>
+      <option value="248">YE - YEMEN</option>
+      <option value="249">ZM - ZAMBIA</option>
+      <option value="250">ZW - ZIMBABWE</option>
+      </select>
+    </div>
+    <div class="col-md-2"></div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="vDf24" name="vDf24" unchecked required>
+        <label class="form-check-label" for="vdf24">Al identificarte aceptas nuestras Condiciones de uso y venta. Consulta nuestro Aviso de privacidad, nuestro Aviso de Cookies y nuestro Aviso sobre publicidad basada en los intereses del usuario.</label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="vDf25" name="vDf25" unchecked required>
+        <label class="form-check-label" for="vDf25">Quiero recibir información, sugerencias y ofertas de w4g y otros productos y que w4g comparta mi información con determinados partners para poder recibir información pertinente sobre sus productos y servicios.</label>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+
+<div class="container">
+    <div class="row justify-content">
+      <div class="col-2"></div>
+      <div class="col-3">
+        <button class="btn btn-primary" type="reset">Reset</button>
+      </div>
+    <div class="col-3">
+      <button class="btn btn-dark" >Code<a data-bs-container="body" data-bs-toggle="popover" title="Información de "Codigo caducado." data-bs-content="El código caduca a las 24 horas de ser enviado, por favor reinicie el proceso en caso de recibir este mensaje."><i class="fa fa-info-circle" aria-hidden="true"></i></a></button>
+        </div>
+    <div class="col-3">
+      <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+    
+    </div>
+</div> 
+
+</form>
+</div>
+
+    
+
+<!--Buttons-->
+<div class="botns">
+    <a href="#">Regresar</a>
+    
+</div>
+
+<!--Footer-->
+<div class="foot">
+    <ul class="social">
+    <li> w4g<span>&#X00AE</span> 2021 - By Codo a Codo</li>
+    <li><a href="https://twitter.com/diegow4g" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.instagram.com/diegow4g" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/UC6TbIRoVCKhhCkj2ORkgAFA" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+    <li><a href="mailto:w4.geek@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("RegFrom").addEventListener('submit', validarFormulario);
+});
+
+function validarFormulario(evento) {
+    evento.preventDefault();
+
+    var validationDefault01 = document.getElementById('vDf01').value;
+    if (validationDefault01.includes('@gmail.com')||validationDefault01.includes('@outlook.com')||validationDefault01.includes('@yahoo.com')||validationDefault01.includes('@hotmail.com')||validationDefault01.includes('.ar')){
+        alert('Ingrese un correo electrónico de su empresa y los dominios .ar no creemos que duren mucho, así que no los aceptamos.');
+        return;
+    }
+
+    var validationDefault02 = document.getElementById('vDf02').value;
+    if (validationDefault02 != 828879) {
+        alert('El código válido es 828879, lea el email.');
+        return;
+    }
+
+    var validationDefault04 = document.getElementById('vDf04').value;
+    var validationDefault05 = document.getElementById('vDf05').value;
+    if (validationDefault04 != validationDefault05) {
+        alert('Las contraseñas no coinciden.');
+        return;
+    }
+
+
+    var validationDefault06 = document.getElementById('vDf06').value;
+    if (validationDefault06 == "Alejandro" || validationDefault06 == "Cristian") {
+        alert('Ustedes está en la lista negra.');
+        return;
+    }
+
+    vDf10
+    this.submit();
+}
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })</script>
+</body>
+</html>

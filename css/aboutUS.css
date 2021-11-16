@@ -1,0 +1,92 @@
+*{text-decoration:none; list-style:none; outline:none; font-family: 'Raleway', sans-serif;background-color:#272b2b; color:whitesmoke}
+
+
+.social-call{height: 40px;width: 100%;border: 1px solid #272b2b; display: flex;justify-content: center;align-items: center;background-color: #272b2b;}
+.social-call a{margin: 5px;color: whitesmoke;font-size: 0.9rem;}
+.social-call a:hover{color: #5f5f5f;transition: all ease 0.3s;}
+.social-call .phone{margin: 5px;color: whitesmoke;font-size: 0.9rem;}
+.social-call .phone:hover{transform: scale(1.05);}
+
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color: whitesmoke; font-style: 'Raleway', sans-serif;font-size: 0.9rem;text-transform:uppercase; padding: 25px 20px; display: block;transition: all 0.5s ease 0s;}
+nav ul li a:hover{color: #7c7c7c; transition: all 0.5s ease 0s;transform: rotateZ(-5deg);}
+
+.toggle-menu ul{display:table; width:25px;color: whitesmoke; }
+.toggle-menu ul li{width:100%; background-color: whitesmoke; color: whitesmoke; margin-bottom:4px;height: 3px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;color: whitesmoke; background-color: whitesmoke;}
+
+input[type=checkbox], label{display:none; },
+body{margin:50px; padding:10px;}
+section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+h1{margin:0px auto; display:table; font-size: 1.5rem;padding:40px 0px; color:whitesmoke; text-align:center; position: relative;}
+h1 span{font-weight:500; font-size: 1.5rem;}
+.content{display:table; margin-bottom:60px; width: 900px;}
+.content h2{font-size:1.5rem; font-weight:500; color:whitesmoke; border-bottom:1px solid rgba(225,225,225,0.1); display:table; padding-bottom:10px; margin-bottom:10px;}
+.content p{font-size:1rem; line-height:22px; color:whitesmoke; text-align:justify;}
+.content p a{font-size:1rem; line-height:22px; color:whitesmoke; text-align:justify;}
+.content p a:hover{color:#7c7c7c; transition: all 0.5s ease 0s;}
+
+.map{margin:auto; width: 35%; border: none;}
+
+
+.btns{display: flex;justify-content: center;align-content: center;background-color: #272b2b;}
+.btns a{width: 130px;height: 40px;border: none;outline: none;color: whitesmoke;background-color: #e62e2d;margin: 10px;display: flex;justify-content: center;align-items: center;font-size: 1rem;}
+.btns a:hover{background-color: #5e5e5e;}
+
+nav .menu-btn{display: none}
+
+footer{display:table; width:100%; background-color: #272b2b;margin-top: 0px; border-top: none;font-size:1}
+.social{margin:30px auto; display:table; display:table;}
+.social li{float:left; padding:0px 10px; color: whitesmoke}
+.social li a{color: whitesmoke;transition: all 0.5s ease 0s;}
+.social li a:hover{color:#7c7c7c; transition: all 0.5s ease 0s;}
+.social li a i{color: whitesmoke;transition: all 0.5s ease 0s;}
+.social li a i:hover{color:#7c7c7c; transition: all 0.5s ease 0s;}
+
+@media only screen and (max-width: 1440px) {
+  section{max-width:95%;}
+  }
+  
+  @media only screen and (max-width: 980px) {
+  header{padding:20px 0px;}
+  #logo{padding:20px;}
+  input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+  input[type=checkbox]:focus{background:none;}
+  label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+  input[type=checkbox]:checked ~ nav {display:block;}
+  
+  nav{display:none; position:absolute; right:0px; top:53px; background-color:#272b2b; padding:0px; z-index:99;}
+  nav ul{width:auto;}
+  nav ul li{float:none; padding:0px; width:100%; display:table;}
+  nav ul li a{color: whitesmoke; font-size:0.9rem; padding:10px 20px; display:block; border: 1px solid #7c7c7c;}
+  nav ul li a:hover{transform: none;}
+  
+  @media only screen and (max-width: 980px) {
+  .content{width:90%;}
+footer{width: 80%;}  
+}
+
+  
+  @media only screen and (max-width: 568px) {
+  h1{padding:25px 0px;}
+  h1 span{display:block;}
+  }
+  
+  @media only screen and (max-width: 480px) {
+  section {max-width: 90%;}
+  }
+  
+  @media only screen and (max-width: 360px) {
+  h1{font-size:1rem;}
+  label{padding:5px 0px;}
+  #logo{font-size: 20px;}
+  nav{top:47px;}
+  }
+  
+  @media only screen and (max-width: 320px) {
+  h1 {padding: 20px 0px;}
+  }
+  

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!--Using Google fonts "Raleway"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    
+    <!--Using fontAwesome-->
+    <script src="https://kit.fontawesome.com/d65efb3d43.js" crossorigin="anonymous"></script>
+
+    <title> 🆆4🅶 | Geek Store </title>
+    
+    <!--Using CSS styleSheet-->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    
+    <!--Using CSS lightSlider stylesheet-->
+    <link rel="stylesheet" type="text/css" href="../css/lightslider.css"/>
+    
+    <!--Using js and css (booster tools) | NO boostrap-->
+    
+    <!--Using jQery | NO boostrap-->
+    <script src="../js/jQuery.js"></script>
+    
+    <!--Using lightSlider | NO boostrap-->
+    <script src="../js/lightslider.js"></script>
+
+    <!--favIcon-->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+</head>
+
+<body>
+
+    <!--Navigation-->
+    
+    <!--Social container-->
+        <div class="social-call">
+            <a href="https://twitter.com/diegow4g" target="blanc_"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/diegow4g/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC6TbIRoVCKhhCkj2ORkgAFA"><i class="fab fa-youtube"></i></a>
+            <a href="https://goo.gl/maps/DiH2xdEDzDsxTVqWA"><i class="fas fa-map-marked-alt"></i></a>
+            <span class="phone"> Call 0800-999-4335 (GEEK) </span>
+        </div>
+        <!--Menu bar container-->
+        <nav>
+        <div class="navigation">
+        <!--Logo container-->
+            <a href="#" class="logo">
+                <img src="img/w4g_WoT_lg.png" alt=""/>
+            </a>
+        <!--Menu icon-->
+        <div class="toggle"></div>        
+    
+        <!--Menu container-->
+        <!--General menu options-->
+        <ul class="menu">
+            <li><a href="/pages/catalog.html"><i class="fas fa-book-reader"></i>-Catálogo</a></li>
+            <li><a href="/pages/form.html"><i class="fas fa-user-plus"></i>-Registro</a></li>
+            <li><a href="/pages/aboutUs.html"><i class="fas fa-info-circle">-🆆4🅶</i></a></li>
+            <li><a href="#"><i class="fa fa-question-circle"></i>-Ayuda</a></li>        
+        </ul>
+    
+            <!--Right menu-->
+            <div class="right-menu">
+                <!--Search | No comentar clase search, asocia con JQuery-->
+                <a href="javascript:void(0);" class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!--User-->
+                <a href="javascript:void(0);" class="user">
+                    <i class="far fa-user"></i>
+                    
+                </a>
+                <!---Centro de alertas | Ideas ticket 20211015 baja prioridad
+                <a href="#">
+                    <i class="fas fa-ticket-alt">
+                    
+                    <span class="num-ticket-alert">0</span>
+                    </i>
+                </a>
+                Centro de alertas | Ideas ticket 20211015 baja prioridad-->
+            </div>
+    
+        </div>
+    
+    </nav>
+    <!--Search bar | No comentar clase search-bar, asocia con JQuery-->
+    <div class="search-bar">
+        <!--Search input-->
+        <div class="search-input">
+            <!--Search text field-->
+            <input type="text" placeholder="Buscar"/>
+            <!--Cancel | No comentar clase search-cancel ya que anula el poder salir del JQuery en search-->
+            <a href="javascript:void(0);" class="search-cancel">
+            <i class="fas fa-times"></i>
+            </a>
+
+        </div>
+
+
+    </div>
+
+    <!--Formularios en index asociados a user-->
+
+    <div id="user-form" class="form" >
+        
+        <!--Formulario de ingreso-->
+            
+            <div class="login-form">
+            
+            <!--Botón de cancel | No comentar-->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i> 
+            </a>
+            
+            <!--header-->
+            <strong>Iniciar sesión</strong>
+            
+            <!--body-->
+            <form>
+                <label> Dirección de e-mail </label><input type="email" placeholder=" ejemplo@mail.com" name=" Dirección de e-mail " required/>
+                <label> Contraseña </label><input type="password" placeholder=" Contraseña " name=" Contraseña "required/>
+            </form>    
+            
+            <!--Bontón de control-->
+            <input type="submit" value="Iniciar sesión ">
+
+            <!--Forget and sign up controls-->
+            <div class="form-btns">
+            
+                <!--Botones de forget and sign up-->
+                <a href="javascript:void(0);" class="already-acount">  ¿Has olvidado la contraseña? </a>
+                <a href="javascript:void(0);" class="sign-up-btn"> ¿Eres nuevo en Amazon? </a>
+            </div>
+        </div>
+        
+        <!--Formulario de registro-->
+            
+            <div class="sign-up-form">
+            
+            <!--Botón de cancel | No comentar-->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            
+            <!--header-->
+            <strong> Bievenido a w4g </strong>
+            
+            <!--html de formulario-->
+            
+            <form>
+                <label> Correo electrónico  </label><input type="email" placeholder=" ejemplo@mail.com " name="email" required>
+                <label> Al identificarte aceptas nuestras <a href="#">Condiciones de uso y venta</a> . Consulta nuestro <a href="#">Aviso de privacidad</a>, nuestro <a href="#">Aviso de Cookies</a> y nuestro <a href="#">Aviso sobre publicidad basada en los intereses del usuario.</a></label>
+                <!--Bontón de ingresar-->
+            
+            <input type="submit" value="Crea tu cuenta de w4g"/>
+
+            </form>
+            <!--Forget and sign up-->
+            
+            <div class="form-btns">
+            
+                <!--Botones de forget -->
+                <a href="javascript:void(0);" class="already-acount"> ¿Ya tiene una cuenta? Iniciar sesión </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin de formularios-->
+
+    <!--Slider de vidriera-->
+
+    <ul id="adaptive" class="cs-hidden">
+        <!--Box 1-->
+        <li class="item-a">
+
+        <!--Box-->
+
+        <div class="full-slider-box f-slide-1">
+    
+            <!--Text slider-->
+        
+                <div class="slider-text-container">
+                    
+                    <div class="f-slider-text">
+                    <span>
+                        Infaltables
+                    </span>
+                    <strong>
+                        T-Shits y Mugs <br> Sarcasticos <font></font>
+                    </strong>
+                    <a href="#" class="f-slider-btn">Diseño</a>
+                    </div>  
+                
+                </div>
+        
+        </div>
+        </li>
+        
+        <!--Box2-->
+        <li class="item-a">
+
+        <!--Box-->
+
+        <div class="full-slider-box f-slide-2">
+
+            <!--Text slider-->
+        
+                <div class="slider-text-container">
+                    
+                    <div class="f-slider-text">
+                    <span>
+                        3D HOBBIES
+                    </span>
+                    <strong>
+                        Diseño y Arte 3D <br><font></font>
+                    </strong>
+                    <a href="#" class="f-slider-btn">Arte</a>
+                    </div>  
+                
+                </div>
+                
+                </div>
+        </li>
+        <!--Box 3-->
+        <li class="item-a">
+
+        <!--Box-->
+
+        <div class="full-slider-box f-slide-3">
+
+            <!--Text slider-->
+        
+                <div class="slider-text-container">
+                    
+                    <div class="f-slider-text">
+                    <span>
+                        Gadgets
+                    </span>
+                    <strong>
+                        Los más modernos GADGETS <br><font></font>
+                    </strong>
+                    <a href="#" class="f-slider-btn">Store</a>
+                    </div>  
+                
+                </div>
+        
+        </div>
+        </li>    
+        <!--Box 4-->
+        <li class="item-a">
+
+        <!--Box-->
+
+        <div class="full-slider-box f-slide-4">
+
+            <!--Text slider-->
+        
+                <div class="slider-text-container">
+                    
+                    <div class="f-slider-text">
+                    <span>
+                        COMICS | MANGAS | PELICULAS
+                    </span>
+                    <strong>
+                        Nuevos y clásicos <br><font></font>
+                    </strong>
+                    <a href="#" class="f-slider-btn">Catélogo</a>
+                    </div>  
+                
+                </div>
+        
+        </div>
+        </li>
+        <!--Box 5-->
+        <li class="item-a">
+
+        <!--Box-->
+
+        <div class="full-slider-box f-slide-5">
+
+            <!--Text slider-->
+        
+                <div class="slider-text-container">
+                    
+                    <div class="f-slider-text">
+                    <span>
+                        Arquitectira Geek
+                    </span>
+                    <strong>
+                        Tu espacio <br> Sillones, escritorios y más. <font></font>
+                    </strong>
+                    <a href="#" class="f-slider-btn">Deco</a>
+                    </div>  
+                
+                </div>
+        
+        </div>
+        </li>
+    </ul>
+
+<!--Nuevos-->
+
+    <section class="new-arrival">
+    <!--header-->
+        <div class="arrival-heading">
+            
+            <strong>Recomendados</strong><br>
+            <p>El Mundo para quienes somos Geek antes de The Big Bang Theory</p>
+
+        </div>
+
+    <!--Bin de novedades-->
+    <div class="product-container">
+    
+    <!--Box de novedades 1-->
+    <div class="product-box">
+    <!--Imagen-->
+    <div class="product-img">
+        <img src="img/r1.jpg" />
+    </div>
+    <!--Detalle-->
+    <div class="product-details">
+        <a href="#" class="p-name">Organizador de accesorios.</a>
+        <span class="p-price">$ 4000</span>
+
+    </div>
+
+    </div>    
+
+    <!--Box de novedades 2-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r2.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Figuraas 3D Avengers para arte.</a>
+            <span class="p-price">$ 8.500</span>
+    
+        </div>
+    
+        </div>
+
+    <!--Box de novedades 3-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r3.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Gunnar Computer Glasses anti blue ligh.</a>
+            <span class="p-price">u$s 150</span>
+    
+        </div>
+    
+        </div>    
+
+    <!--Box de novedades 4-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r4.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Retro Bluetooth 50W Media Station</a>
+            <span class="p-price">u$s 80</span>
+    
+        </div>
+    
+        </div>
+
+    <!--Box de novedades 5-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r5.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Lampara LED Task Bluetooth</a>
+            <span class="p-price">$ 9.000</span>
+    
+        </div>
+    
+        </div>
+
+    <!--Box de novedades 6-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r6.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Remeras temáticas</a>
+            <span class="p-price">$ 2.500</span>
+    
+        </div>
+    
+        </div>
+
+    <!--Box de novedades 7-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r7.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Mugs creativos</a>
+            <span class="p-price">$ 3.000</span>
+    
+        </div>
+    
+        </div>
+
+    <!--Box de novedades 8-->
+    <div class="product-box">
+        <!--Imagen-->
+        <div class="product-img">
+            <img src="img/r8.jpg" />
+        </div>
+        <!--Detalle-->
+        <div class="product-details">
+            <a href="#" class="p-name">Rayban Leather Travel Laptop Bag</a>
+            <span class="p-price">u$s 250</span>
+    
+        </div>
+    
+        </div>
+
+    </div>
+    </section>
+
+ <!--Servicios-->
+
+    <section class="services">
+
+    <!--Box de servicios 1-->
+    <div class="services-box">
+        <i class="fas fa-shipping-fast"></i>
+            <span>Shipping</span>
+            <p>Free Shipping for CABA orders</p>
+
+        
+    </div>
+
+    <!--Box de servicios 2-->
+    <div class="services-box">
+        <i class="fas fa-headphones-alt"></i>
+            <span>Support 24/7</span>
+            <p>Soporte las 24 horas del día</p>
+
+        
+    </div>
+
+    <!--Box de servicios 3-->
+    <div class="services-box">
+        <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>30 días para devoluciones</p>
+
+        
+    </div>
+    </section>
+    <!--Buttons-->
+    <div class="btns">
+        <a href="#">Regresar</a>
+    </div>
+    <footer>
+        <ul class="social">
+        <li> w4g<span>&#X00AE</span> 2021 - By Codo a Codo</li>
+        <li><a href="#"></a>Términos y Aviso de privacidad</li>
+        <li><a href="#"></a>Comentarios</li>
+        <li><a href="#"></a>Ayuda</li>
+        <li><a href="https://twitter.com/diegow4g" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/diegow4g" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UC6TbIRoVCKhhCkj2ORkgAFA" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:w4.geek@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </footer>
+    <br>
+ 
+    
+
+
+
+    <!--jQuery para algunos efectos visuales menores-->
+    
+    
+    
+    <script type="text/javascript">
+        
+    $(document).on('click','.search',function(){
+        $('.search-bar').addClass('search-bar-active')
+    });
+
+    $(document).on('click','.search-cancel',function(){
+        $('.search-bar').removeClass('search-bar-active')
+    });
+
+    </script>
+
+    <script type="text/javascript">
+
+    $(document).on('click','.user,.already-acount',function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+    });
+
+    $(document).on('click','.sign-up-btn',function(){
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+
+    $(document).on('click','.form-cancel',function(){
+        $('.form').removeClass('login-active').removeClass('sign-up-active')
+    });
+    
+    </script>
+
+ <!--Slider con Ligh Slider-->
+
+ <script type="text/javascript">
+    
+    $(document).ready(function() {
+        $('#adaptive').lightSlider({
+            adaptiveHeight:true,
+            auto:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+        });
+    });
+ </script>
+
+ <!--Featured con Ligh Slider-->
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');} 
+        });  
+      });
+</script>
+
+<script type="text/javascript">
+
+    $(windows).scroll(function() {
+        if($(document).scrollTop() > 50){
+            $('.navigation').addClass('fix-nav');
+
+        }
+        else{
+            $('.navigation').removeClass('fix-nav');
+        
+        }
+    });
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('.navigation').toggleClass('active')
+            
+        })
+    });
+</script>
+
+
+
+
+</body>
+</html>
